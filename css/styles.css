@@ -51,17 +51,21 @@ nav li {
   }
 
 
-  .cta {
-    background-color: #bb0000;
-    color: #fff;
-    font-size: 1.5em;
-  }
+.cta {
+  background-color: #bb0000;
+  color: #fff;
+  font-size: 1.5em;
+}
 
-  .cta-sale {
-    background-color: #127300;
-  }
+.cta-sale {
+  background-color: #127300;
+}
   
-  footer {
-    text-align: center;
-  }
+footer {
+  text-align: center;
+}
 
+input, select, textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px; 
+}
