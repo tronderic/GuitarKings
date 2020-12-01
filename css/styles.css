@@ -34,6 +34,18 @@ nav li {
     display: inline-block;
   }
 
+  nav ul {
+    padding: 0px;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+
+  .current {
+    text-decoration: underline;
+  }
+
 .home-info {
   border-radius: 100px;
 }
