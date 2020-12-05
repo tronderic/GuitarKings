@@ -27,6 +27,7 @@ header, footer {
 
 header a {
     color: #fff;
+    padding: 10px;
 }
 
 
@@ -66,7 +67,15 @@ nav li {
 .cta {
   background-color: #bb0000;
   color: #fff;
-  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 8px 30px;
+  font-size: 0.8em;
+}
+
+.cta-view {
+  padding: 10px 80px;
+  font-size: 1em;
 }
 
 .cta-sale {
