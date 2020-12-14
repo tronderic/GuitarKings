@@ -107,3 +107,8 @@ textarea {
 .header {
   display: flex;
 }
+
+.our-guitars {
+  display: flex;
+  justify-content: space-evenly;
+}
