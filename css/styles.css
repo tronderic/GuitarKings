@@ -3,11 +3,12 @@
   src: ("fonts/BootsAndSpurs.ttf") format(ttf);
 }
 
-.header,
+.header-link,
 h1,
 h2,
 h3 {
   font-family: "boots & spurs", sans-serif;
+  text-decoration: none;
 }
 
 .background-image {
@@ -41,7 +42,7 @@ nav li {
 }
 
 nav ul {
-  padding: 0px;
+  padding: 0px 50px;
 }
 
 nav a {
@@ -101,4 +102,8 @@ textarea {
   position: absolute;
   top: 100px;
   left: 100px;
+}
+
+.header {
+  display: flex;
 }
