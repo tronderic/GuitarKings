@@ -109,13 +109,38 @@ footer {
   text-align: center;
 }
 
+/* contact page*/
 input,
 select,
 textarea {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
 }
 
+textarea {
+  height: 65%;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/*product specific page*/
 .guitar-header {
   position: absolute;
   top: 100px;
@@ -140,4 +165,39 @@ textarea {
 .our-guitars > *,
 .review > * {
   flex: 1;
+}
+
+.product-specific {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.product-specific > * {
+  flex: 1;
+}
+
+.product-specific__details {
+  padding: 0px 30px;
+}
+
+.product-specific__details a {
+  display: block;
+  width: 61.55px;
+  margin: auto;
+}
+
+.product-specific__price {
+  font-size: 1.5em;
+}
+
+.product-image {
+  width: 100%;
+  min-width: 0px;
+}
+
+.product-image_thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
 }

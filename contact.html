@@ -18,24 +18,32 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="contact">
       <h1>Contact Us</h1>
       <form action="form-contact.php" method="GET">
-        <label for="name">Full Name</label>
-        <input type="text" name="name" id="name" />
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
-        <label for="guitar">Guitar</label>
-        <select name="guitar" id="guitar">
-          <option value="aridondack-red">Adirondack Red</option>
-          <option value="aridondack-red">Adirondack Red</option>
-          <option value="aridondack-red">Adirondack Red</option>
-          <option value="aridondack-red">Adirondack Red</option>
-        </select>
-        <input type="checkbox" name="sign-up" value="sign-up" id="sign-up" />
-        <label for="sign-up">Sign up for email updates.</label>
-        <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
+        <div class="form-wrapper">
+          <section>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="guitar">Guitar</label>
+            <select name="guitar" id="guitar">
+              <option value="aridondack-red">Adirondack Red</option>
+              <option value="aridondack-red">Adirondack Red</option>
+              <option value="aridondack-red">Adirondack Red</option>
+              <option value="aridondack-red">Adirondack Red</option>
+            </select>
+            <div>
+              <input type="checkbox" name="sign-up" value="sign-up" id="sign-up" />
+              <label for="sign-up">Sign up for email updates.</label>
+            </div>
+          </section>
+          <section>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </section>
+        </div>
         <input type="submit" value="Send Now" class="cta" />
       </form>
     </main>
