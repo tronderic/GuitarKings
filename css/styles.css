@@ -24,6 +24,10 @@ h3 {
 
 body {
   font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 header,
@@ -83,7 +87,7 @@ nav a {
   display: block;
 }
 
-.featured-products {
+.featured {
   background-color: #fbfbfb;
 }
 
@@ -92,8 +96,13 @@ nav a {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  padding: 8px 30px;
+  padding: 8px 20px;
   font-size: 0.8em;
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 42.4833px;
+  text-align: center;
+  margin: 5px;
 }
 
 .cta-view {
@@ -107,6 +116,7 @@ nav a {
 
 footer {
   text-align: center;
+  padding: 20px;
 }
 
 /* contact page*/
@@ -124,7 +134,7 @@ textarea {
 }
 
 .contact {
-  max-width: 1000px;
+  width: 1000px;
   margin: 50px auto;
   text-align: center;
 }
@@ -200,4 +210,53 @@ textarea {
   display: flex;
   gap: 10px;
   margin-top: 5px;
+}
+
+/* products*/
+
+.featured h3 {
+  grid-column: -1/1;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 50px auto;
+  grid-gap: 10px;
+}
+
+.featured img {
+  width: 100%;
+  grid-column: -1/1;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.products p {
+  grid-column: 1;
+  font-size: 0.9em;
+  margin: 5px;
+}
+
+/* guitars */
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.products img {
+  width: 100%;
+  grid-column: -1/1;
+}
+
+.guitars {
+  max-width: 1000px;
+  margin: auto;
 }
