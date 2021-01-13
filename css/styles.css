@@ -103,6 +103,26 @@ nav a {
   min-width: 42.4833px;
   text-align: center;
   margin: 5px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cta:before {
+  content: "";
+  padding: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -40px;
+  left: -100px;
+  transition: left ease-in-out 1s;
+  opacity: 0.3;
+}
+
+.cta:hover:before {
+  left: 110%;
 }
 
 .cta-view {
@@ -249,6 +269,17 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  animation-name: slow-reveal;
+  animation-duration: 1s;
+}
+
+@keyframes slow-reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .products img {
