@@ -18,6 +18,11 @@
   margin: 5px;
 }
 
+.products img {
+  width: 100%;
+  grid-column: -1/1;
+}
+
 @keyframes slow-reveal {
   0% {
     opacity: 0;
