@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "boots & spurs";
+  src: ("fonts/BootsAndSpurs.ttf") format(ttf);
+}
+
+.header-link,
+h1,
+h2,
+h3 {
+  font-family: "boots & spurs", sans-serif;
+  text-decoration: none;
+}
+
+.background-image {
+  background: url("../images/home-header.jpg") no-repeat right bottom/cover;
+  min-height: 70vh;
+  position: relative;
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+  background: #202020;
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+  padding: 10px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav ul {
+  padding: 0px 50px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+.home-info {
+  border-radius: 100px;
+  width: 100%;
+}
+
+.reviews {
+  background: #e8e8e8;
+  text-align: center;
+  padding: 50px;
+}
+
+.review div {
+  margin: 50px;
+}
+
+.review {
+  text-align: left;
+  margin: auto;
+}
+
+.review img {
+  width: 80px;
+  border-radius: 50%;
+  float: right;
+}
+
+.reviews__name {
+  display: block;
+}
+
+.featured {
+  background: #fbfbfb;
+}
+
+.guitar-header {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.our-guitars {
+  margin: 50px auto;
+}
+
+.our-guitars,
+.review {
+  max-width: 1000px;
+  display: flex;
+}
+
+.our-guitars > *,
+.review > * {
+  flex: 1;
+}
+
+.featured h3 {
+  grid-column: -1/1;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 50px auto;
+  gap: 10px;
+}
+
+.featured img {
+  width: 100%;
+  grid-column: -1/1;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.products p {
+  grid-column: 1;
+  font-size: 0.9em;
+  margin: 5px;
+}
+
+.cta {
+  background: #bb0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-size: 0.8em;
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 42.4833px;
+  text-align: center;
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cta:before {
+  content: "";
+  padding: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -40px;
+  left: -100px;
+  transition: left ease-in-out 1s;
+  opacity: 0.3;
+}
+
+.cta:hover:before {
+  left: 110%;
+}
+
+.cta-view {
+  padding: 10px 80px;
+  font-size: 1em;
+}
+
+.cta-sale {
+  background: #127300;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
