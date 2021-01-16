@@ -12,11 +12,7 @@ h3 {
 }
 
 .background-image {
-  background-image: url("../images/home-header.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
+  background: url("../images/home-header.jpg") no-repeat right bottom/cover;
   min-height: 70vh;
   position: relative;
   text-align: center;
@@ -32,7 +28,7 @@ body {
 
 header,
 footer {
-  background-color: #202020;
+  background: #202020;
   color: #fff;
 }
 
@@ -63,7 +59,7 @@ nav a {
 }
 
 .reviews {
-  background-color: #e8e8e8;
+  background: #e8e8e8;
   text-align: center;
   padding: 50px;
 }
@@ -88,11 +84,11 @@ nav a {
 }
 
 .featured {
-  background-color: #fbfbfb;
+  background: #fbfbfb;
 }
 
 .cta {
-  background-color: #bb0000;
+  background: #bb0000;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -131,7 +127,7 @@ nav a {
 }
 
 .cta-sale {
-  background-color: #127300;
+  background: #127300;
 }
 
 footer {
