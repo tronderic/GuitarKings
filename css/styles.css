@@ -239,7 +239,7 @@ textarea {
   grid-template-columns: repeat(4, 1fr);
   max-width: 1000px;
   margin: 50px auto;
-  grid-gap: 10px;
+  gap: 10px;
 }
 
 .featured img {
@@ -264,7 +264,7 @@ textarea {
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  gap: 20px;
   animation-name: slow-reveal;
   animation-duration: 1s;
 }
