@@ -6,6 +6,18 @@
   animation-duration: 1s;
 }
 
+.products {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.products p {
+  grid-column: 1;
+  font-size: 0.9em;
+  margin: 5px;
+}
+
 @keyframes slow-reveal {
   0% {
     opacity: 0;
