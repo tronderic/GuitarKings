@@ -1,10 +1,47 @@
-@import "imports/adirondack-red-phone.css" only screen and (max-width: 400px);
-@import "imports/adirondack-red.css";
-@import "imports/contact-phone.css" only screen and (max-width: 400px);
-@import "imports/contact.css";
-@import "imports/guitars-phone.css" only screen and (max-width: 400px);
-@import "imports/guitars-tablet.css" only screen and (min-width: 401px) and (max-width: 800px);
-@import "imports/guitars.css";
-@import "imports/index-phone.css" only screen and (max-width: 400px);
-@import "imports/index.css";
+@import "imports/links.css";
 @import "imports/variables.css";
+
+@font-face {
+  font-family: "boots & spurs";
+  src: ("fonts/BootsAndSpurs.ttf") format(ttf);
+}
+
+.header-link,
+h1,
+h2,
+h3 {
+  font-family: var(--text-heading), sans-serif;
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--text-paragraph), sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+  background: var(--color-header-footer);
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav ul {
+  padding: 0px 50px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}

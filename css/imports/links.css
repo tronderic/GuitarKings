@@ -1,0 +1,55 @@
+nav a {
+  text-decoration: none;
+}
+
+header a {
+  color: #fff;
+  padding: 10px;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+.cta {
+  background: #bb0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-size: 0.8em;
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 42.4833px;
+  text-align: center;
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cta:before {
+  content: "";
+  padding: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -40px;
+  left: -100px;
+  transition: left ease-in-out 1s;
+  opacity: 0.3;
+}
+
+.cta:hover:before {
+  left: 110%;
+}
+
+.cta-view {
+  padding: 10px 80px;
+  font-size: 1em;
+}
+
+.cta-sale {
+  background: #127300;
+}
